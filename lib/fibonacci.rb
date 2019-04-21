@@ -5,8 +5,8 @@
 # ....
 # e.g. 6th fibonacci number is 8
 
-# Time complexity: ?
-# Space complexity: ?
+# Time complexity: O(n) where n is size of input
+# Space complexity: O(1)
 def fibonacci_non_recursion(n)
   # n i step nth fibonacci number in series
   # if n = 5
