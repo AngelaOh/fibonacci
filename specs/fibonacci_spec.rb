@@ -1,6 +1,7 @@
-require 'minitest/autorun'
-require 'minitest/reporters'
-require_relative '../lib/fibonacci'
+require "minitest/autorun"
+require "minitest/reporters"
+require "minitest/pride"
+require_relative "../lib/fibonacci"
 
 describe "fibonacci" do
   describe "basic tests" do
@@ -29,11 +30,11 @@ describe "fibonacci" do
   describe "edge cases" do
     # if the parameter is an object, check for nil
     it "nil object is not an integer" do
-      proc {fibonacci(nil)}.must_raise ArgumentError
+      proc { fibonacci(nil) }.must_raise ArgumentError
     end
 
     it "negative input" do
-      proc {fibonacci(-9)}.must_raise ArgumentError
+      proc { fibonacci(-9) }.must_raise ArgumentError
     end
 
     it "zero input" do
